@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project 2 - Minesweeper</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <form action="_self" class="form-inline mb-5 mt-5">
+            <div class="form-group">
+              <label id="RowsMsg" for="rows">Rows: </label>
+              <input type="number" class="form-control ml-1 mr-1" min="1" max="40" id="rows">
+              <label id="ColsMsg" for="cols">Columns: </label>
+              <input type="number" class="form-control ml-1 mr-1" min="1" max="40" id="cols">
+              <label id="MineMsg" for="mines">Mines: </label>
+              <input type="number" class="form-control ml-1 mr-1" id="mines">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="requestBoard()">Play</button>
+          </form> 
+          <div id="MinesweeperBoard">
+        
+          </div>
+          <div id="resultMsg" class="alert alert-success" style="display:none"></div>
+
+
+
+
+
+        <script src="app.js"></script>
+    </body>
+</html>

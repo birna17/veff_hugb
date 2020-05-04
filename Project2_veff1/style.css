@@ -1,0 +1,14 @@
+.btn-secondary {
+    width: 2rem;
+    height: 2rem;
+}
+.bomb {
+    background-image: url('bomb.png');
+    background-size: 100%;
+}
+
+.flag {
+    background-image: url('flag.png');
+    background-size: 100%;
+    background-color: goldenrod;
+}
